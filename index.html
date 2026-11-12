@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Estrategia Pro GK 2027</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fondo:#F4F2EE;--papel:#FFFFFF;--tinta:#16181C;--suave:#5E636B;--linea:#E2DED6;--oro:#D9A23A;--oro-osc:#9C6F1C;--verde:#2F8F5B;--rojo:#B9483B;--cab:#121417}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:64px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--fondo);color:var(--tinta);font:15.5px/1.6 Inter,system-ui,sans-serif}
+.envoltura{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+header.portada{background:var(--cab);color:#fff;padding:44px 20px 38px}
+.in{max-width:1040px;margin:0 auto}
+.kicker{font:700 13px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+h1{font:700 clamp(38px,6vw,62px)/1 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:12px 0 10px;text-wrap:balance;padding-right:90px}
+h1 span{color:var(--oro)}
+.sub{color:#C9CDD3;max-width:72ch;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{border:1px solid #3A3E45;border-radius:999px;padding:5px 12px;font-size:13px;color:#E6E8EB}
+nav.indice{position:sticky;top:0;z-index:20;background:#1B1E22;border-bottom:1px solid #2C3036;padding:0 20px}
+nav.indice .in{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:9px 0}
+nav.indice .in::-webkit-scrollbar{display:none}
+nav.indice a{flex:none;color:#C9CDD3;text-decoration:none;font-size:13px;font-weight:600;padding:6px 10px;border-radius:8px}
+nav.indice a:hover,nav.indice a:focus-visible{background:#2A2E34;color:#fff;outline:none}
+h2{font:700 30px/1.1 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:56px 0 6px;text-wrap:balance}
+h2 .n{color:var(--oro-osc);margin-right:8px}
+h3{font-size:16px;margin:24px 0 6px}
+p{max-width:74ch}
+.lead{color:var(--suave);margin-top:0}
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.tarjeta{background:var(--papel);border:1px solid var(--linea);border-radius:14px;padding:18px 18px 16px}
+.tarjeta .cifra{font:700 40px/1 "Barlow Condensed",sans-serif;font-variant-numeric:tabular-nums}
+.tarjeta .et{font-weight:600;margin-top:6px}
+.tarjeta .nota{font-size:13.5px;color:var(--suave);margin-top:4px}
+.aviso{border-left:4px solid var(--oro);background:#FBF6EA;padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0;max-width:84ch}
+.tabla{overflow-x:auto;background:var(--papel);border:1px solid var(--linea);border-radius:14px;margin-top:12px}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:660px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);background:#FAF8F4}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fase{background:var(--papel);border:1px solid var(--linea);border-radius:14px;padding:18px;display:grid;grid-template-columns:170px 1fr;gap:16px}
+.fase+.fase{margin-top:12px}
+.fase .cuando{font:700 21px/1.05 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.fase .cuando small{display:block;font:500 13px/1.4 Inter,sans-serif;color:var(--suave);text-transform:none;margin-top:4px}
+.fase ul{margin:0;padding-left:18px}.fase li{margin:4px 0}
+.etq{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;padding:2px 7px;margin-right:6px}
+.etq.e{background:#E7F1EC;color:var(--verde)}.etq.s{background:#EDEAF7;color:#5A4AA0}.etq.m{background:#FBEBD2;color:var(--oro-osc)}.etq.i{background:#F7E4E1;color:var(--rojo)}
+.msg{background:var(--papel);border:1px solid var(--linea);border-radius:12px;padding:14px 16px;font-size:14.5px}
+.msg b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--suave);margin-bottom:6px}
+.check{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:8px}
+.check li{background:var(--papel);border:1px solid var(--linea);border-radius:10px;padding:10px 14px 10px 40px;position:relative}
+.check li:before{content:"";position:absolute;left:14px;top:14px;width:14px;height:14px;border:2px solid var(--oro-osc);border-radius:4px}
+.fuentes{font-size:13px;color:var(--suave)}.fuentes a{color:var(--oro-osc)}
+footer{margin-top:60px;font-size:13px;color:var(--suave);border-top:1px solid var(--linea);padding-top:16px}
+.idiomas{position:absolute;top:18px;right:20px;z-index:30;display:flex;background:#1F2227;border:1px solid #3A3E45;border-radius:999px;padding:3px}
+.idiomas button{border:0;background:transparent;color:#C9CDD3;font:700 12.5px/1 Inter,sans-serif;letter-spacing:.06em;padding:8px 13px;border-radius:999px;cursor:pointer}
+.idiomas button[aria-pressed=true]{background:var(--oro);color:#16181C}
+.idiomas button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+html[data-lang=en] .bloque[lang=es],html:not([data-lang=en]) .bloque[lang=en]{display:none}
+@media (max-width:640px){.fase{grid-template-columns:1fr}h1{padding-right:0;margin-top:30px}}
+@media print{nav.indice,.idiomas{display:none}}
+</style></head><body>
+<div class="idiomas" role="group" aria-label="Idioma / Language"><button type="button" id="b-es" data-l="es" aria-pressed="true">ES</button><button type="button" id="b-en" data-l="en" aria-pressed="false">EN</button></div>
+<div class="bloque" lang="es">
+<header class="portada"><div class="in">
+<div class="kicker">Estrategia de marketing · borrador para revisión</div>
+<h1>Pro GK Residential <span>Experience 2027</span></h1>
+<p class="sub">Estrategia integral para llevar el camp residencial de arqueros de Naples, Florida, de 40 inscritos en 2026 a 100 en 2027: diagnóstico, público, oferta, plan de medios con nombres y presupuesto, calendario de envíos, alianzas, medición y lo que hace falta para arrancar.</p>
+<div class="meta"><span class="chip">Meta: 100 inscritos (100–120)</span><span class="chip">Edades 11–18 · solo arqueros</span><span class="chip">Pauta Meta estimada: USD 10.000 en 8 meses</span><span class="chip">Reunión con el socio: lunes 16 nov</span></div>
+</div></header>
+<nav class="indice"><div class="in">
+<a href="#es-resumen">Resumen</a><a href="#es-diag">Diagnóstico</a><a href="#es-redes">Redes</a><a href="#es-publico">Público</a><a href="#es-oferta">Oferta</a><a href="#es-medios">Plan de medios</a><a href="#es-meta">Meta Ads</a><a href="#es-envios">Correo y SMS</a><a href="#es-organico">Instagram</a><a href="#es-alianzas">Alianzas</a><a href="#es-presu">Presupuesto</a><a href="#es-medicion">Medición</a><a href="#es-riesgos">Riesgos</a><a href="#es-socio">Del socio</a>
+</div></nav>
+<div class="envoltura">
+
+<h2 id="es-resumen"><span class="n">01</span>Resumen ejecutivo</h2>
+<p class="lead">El camp tiene un producto fuerte y diferente (residencial, solo arqueros, hotel con parque acuático, nutricionista y staff conectado con MLS y programas universitarios) y un público muy definido. En 2026, su primera edición, reunió a 40 arqueros con unos 3 meses de promoción. Para llegar a 100 se propone empezar ahora, con 8 meses por delante, y trabajar cinco frentes coordinados.</p>
+<div class="grid g3">
+ <div class="tarjeta"><div class="cifra">100</div><div class="et">inscritos en 2027</div><div class="nota">2,5 veces 2026. A USD 1.499 (valor de 2026) representa unos USD 150.000 de ingreso bruto antes de descuentos.</div></div>
+ <div class="tarjeta"><div class="cifra">USD 10.000</div><div class="et">pauta en Meta (8 meses)</div><div class="nota">Unos USD 1.250 al mes en promedio, repartidos por fases. Equivale a 7 % del ingreso objetivo. Hay una versión prudente de USD 6.000.</div></div>
+ <div class="tarjeta"><div class="cifra">5</div><div class="et">frentes de captación</div><div class="nota">Exinscritos 2026, academias del socio, bases propias de arqueros, Meta Ads y alianzas (torneos, clubes y patrocinador).</div></div>
+</div>
+<div class="aviso">Las cifras de conversión y de costo por inscrito son estimaciones de referencia para planear. Se recalculan con los resultados reales de 2026 (precio, origen de los inscritos e inversión) y, desde diciembre, con los datos de cada semana.</div>
+
+<h2 id="es-diag"><span class="n">02</span>Diagnóstico</h2>
+<div class="grid g2">
+ <div class="tarjeta"><div class="et">Web · progkexperience.com</div><div class="nota">Usa el mismo sistema que juventuscampsusa.com (inscripción en app.progkexperience.com). Sigue en <b>Summer 2026</b> con "Registrations currently closed"; los botones no llevan a un formulario porque no hay un camp 2027 cargado. No muestra precio (sí "installments available" y el kit de uniforme aparte, USD 99). <b>Es el primer bloqueo: sin web no hay venta ni medición.</b></div></div>
+ <div class="tarjeta"><div class="et">Plataforma de inscripción</div><div class="nota">Al ser el mismo sistema que usamos en ID Camps, con acceso de administrador se puede reutilizar lo que ya funciona allí: lectura automática de inscritos y pagos, secuencia a quien se registra y no paga, envío de compras a Meta por servidor y un panel en vivo.</div></div>
+ <div class="tarjeta"><div class="et">Pauta en Meta de 2026</div><div class="nota">Según Alessandro, varios videos se pautaron. La inversión, el costo por inscrito y los públicos no se ven desde afuera (la biblioteca de anuncios no los muestra por API en EE. UU.): hacen falta el Administrador de anuncios y la página del socio.</div></div>
+ <div class="tarjeta"><div class="et">Correo y SMS de 2026</div><div class="nota">Los correos los envió otra persona con otro sistema. En la cuenta de Vozzi de Juventus no hay envíos del camp; sí una campaña de arqueros de 2024 (clínica de invierno con Buffon Academy: unos 940 destinatarios por envío y 7–9 % de clics), que muestra buena respuesta de este público.</div></div>
+</div>
+
+<h2 id="es-redes"><span class="n">03</span>Redes sociales, publicación por publicación</h2>
+<p class="lead">Revisión de las 27 publicaciones de @progkexperience y de las 72 más recientes de @gkacademyfl (al 11-nov). Instagram no muestra a terceros las reproducciones de los reels; se comparan "me gusta" y comentarios.</p>
+<div class="grid g3">
+ <div class="tarjeta"><div class="cifra">40</div><div class="et">arqueros en 2026</div><div class="nota">Primera edición, 26–31 de julio. Su propio resumen dice "40 competitive goalkeepers".</div></div>
+ <div class="tarjeta"><div class="cifra">USD 1.499</div><div class="et">valor del camp 2026</div><div class="nota">Dato del sorteo de un lugar ("Value: $1,499"). Referencia hasta confirmar el precio de 2027.</div></div>
+ <div class="tarjeta"><div class="cifra">3 meses</div><div class="et">de publicaciones en Instagram</div><div class="nota">Actividad orgánica del perfil: primer post el 26 de abril y cierre de inscripciones el 23 de julio. Desde el 10 de agosto, casi sin publicaciones. La pauta de ese periodo no es visible desde afuera.</div></div>
+</div>
+<div class="tabla"><table>
+<thead><tr><th>Formato</th><th class="n">Publicaciones</th><th class="n">"Me gusta" (mediana)</th><th>Lo que muestra</th></tr></thead>
+<tbody>
+<tr><td>Carruseles (casi todos de la semana del camp, en agosto)</td><td class="n">10</td><td class="n">168</td><td>Lo mejor de la cuenta: un carrusel publicado junto con un arquero profesional llegó a 2.897 y el resumen del camp a 306–341</td></tr>
+<tr><td>Reels (entrenamiento, anuncios y humor)</td><td class="n">11</td><td class="n">171</td><td>Un reel de humor en colaboración con varias cuentas llegó a 1.940; los reels de anuncio rondan 135–370</td></tr>
+<tr><td>Imagen única (sorteo, ganador, cierre, nutricionista)</td><td class="n">6</td><td class="n">96</td><td>Los gráficos solos rinden menos; la excepción es la presentación de la nutricionista (292 y 60 comentarios, la más comentada, fijada)</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>Lecturas:</b> (1) casi todo se publicó en colaboración con @gkacademyfl (17 mil seguidores), sus sedes, el patrocinador @elitesportgkusa y el director @ronaldgarces12: es la forma de llegar a más público y se mantiene. (2) El material real del camp funciona mejor que los gráficos. (3) A los padres les importa el cuidado integral (nutrición, supervisión 24/7). (4) @gkacademyfl tiene ahora su camp de Thanksgiving: buen momento para presentar 2027 en persona.</div>
+
+<h2 id="es-publico"><span class="n">04</span>Público: segmentos con nombre</h2>
+<p class="lead">Cada segmento tiene su mensaje, su canal y su meta. Los nombres se usan igual en Meta, en las listas y en el panel de seguimiento.</p>
+<div class="tabla"><table>
+<thead><tr><th>Código</th><th>Segmento</th><th class="n">Tamaño</th><th>Canal</th><th>Mensaje principal</th><th class="n">Meta</th></tr></thead>
+<tbody>
+<tr><td><b>S1</b></td><td>Exinscritos 2026</td><td class="n">40</td><td>Correo, SMS, retargeting</td><td>"Vuelve a vivirlo" con código de fidelidad</td><td class="n">10–15</td></tr>
+<tr><td><b>S2</b></td><td>Familias de las academias Pro GK (Naples, Palm Beach y Miami-Dade)</td><td class="n">por confirmar</td><td>Socio: entrenadores, grupos y redes</td><td>"El siguiente nivel de tu entrenamiento"</td><td class="n">10–20</td></tr>
+<tr><td><b>S3</b></td><td>Arqueros de nuestras bases (Juventus Academy Miami y Athletum)</td><td class="n">+1.000</td><td>Correo y SMS</td><td>"Una semana 24/7 solo para arqueros"</td><td class="n">10–30</td></tr>
+<tr><td><b>S4</b></td><td>Padres de arqueros en Florida (nuevos)</td><td class="n">amplio</td><td>Meta Ads</td><td>Experiencia profesional + cuidado integral</td><td class="n">30–45</td></tr>
+<tr><td><b>S5</b></td><td>Padres de arqueros en el sureste (GA, AL, SC, NC)</td><td class="n">amplio</td><td>Meta Ads (prueba)</td><td>"El camp de arqueros de Florida", con hotel incluido</td><td class="n">5–10</td></tr>
+<tr><td><b>S6</b></td><td>Clubes, entrenadores de arqueros y familias de nuestros torneos</td><td class="n">—</td><td>Alianzas, referidos y presencia en eventos</td><td>Código de amigo y difusión del entrenador</td><td class="n">5–15</td></tr>
+<tr><td colspan="5"><b>Total del escenario</b></td><td class="n"><b>70–135</b></td></tr>
+</tbody></table></div>
+<p class="fuentes">S3, solo conteos al 11-nov: PlayMetrics 708 arqueros (~476 en edad del camp en 2027) · Constant Contact "GK athletum tryouts 26-27" 1.090 y "Goalkeepers base data octubre 2024" 775 · Vozzi "GK consolidado 24-25" 750 y "GK tryouts 26-27" 97. Las bases se cruzan entre sí; antes de cada envío se excluye a quien ya se inscribió.</p>
+
+<h2 id="es-oferta"><span class="n">05</span>Oferta y precio (propuesta)</h2>
+<p class="lead">Una escalera de precios con fechas reales crea urgencia sin inventar escasez. Montos de ejemplo sobre la base de USD 1.499; los define el socio.</p>
+<div class="tabla"><table>
+<thead><tr><th>Etapa</th><th>Fechas</th><th class="n">Precio de ejemplo</th><th>Para qué sirve</th></tr></thead>
+<tbody>
+<tr><td><b>Black Friday</b></td><td>27 nov – 2 dic</td><td class="n">USD 1.299</td><td>Arranque con los que ya conocen el camp; aprovecha la época de compras</td></tr>
+<tr><td><b>Preventa</b></td><td>3 dic – 28 feb</td><td class="n">USD 1.399</td><td>Da una fecha límite clara para la mayor parte de la campaña</td></tr>
+<tr><td><b>Precio regular</b></td><td>1 mar – cierre</td><td class="n">USD 1.499</td><td>Precio de lista</td></tr>
+<tr><td><b>Exinscritos 2026</b></td><td>Todo el periodo</td><td class="n">USD 100 menos</td><td>Código de fidelidad (se suma a la etapa vigente)</td></tr>
+<tr><td><b>Referido</b></td><td>Todo el periodo</td><td class="n">USD 100 por amigo</td><td>Crédito para quien trae a otro arquero que se inscribe</td></tr>
+<tr><td><b>Pago en cuotas</b></td><td>Todo el periodo</td><td class="n">3–4 pagos</td><td>Baja la barrera de un precio alto; ya lo menciona la web</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>Propuesta de valor:</b> "Una semana viviendo como arquero profesional: entrenamiento diario de arqueros con staff conectado a MLS y programas universitarios, hotel con parque acuático y todas las comidas, nutricionista y supervisión 24/7." Las pruebas: los 40 arqueros de 2026, las fotos reales del camp y las cuentas que lo respaldan.</div>
+
+<h2 id="es-medios"><span class="n">06</span>Plan de medios por fases</h2>
+<p class="lead">Supone que el camp 2027 será a fines de julio, como en 2026 (fechas por confirmar). Ritmo de referencia de inscritos acumulados entre paréntesis.</p>
+<div class="fase"><div class="cuando">Fase 0 · Preparación<small>16 – 26 nov</small></div><div>
+ <ul><li>Accesos (web, app de inscripción, Stripe, página de Facebook, Administrador de anuncios, base 2026) y web a 2027: fechas, precio, cuotas, botones y prueba de inscripción completa.</li>
+ <li>Medición lista antes de invertir: píxel y API de conversiones, Google Analytics, enlaces con UTM y panel de seguimiento.</li>
+ <li>Piezas del arranque: anuncio Black Friday, reel "un día en el camp" y carrusel resumen 2026.</li></ul></div></div>
+<div class="fase"><div class="cuando">Fase 1 · Black Friday<small>27 nov – 2 dic (10 inscritos)</small></div><div>
+ <ul><li><span class="etq e">Correo</span>S1 y S2: apertura 2027 con precio Black Friday y código de fidelidad.</li>
+ <li><span class="etq s">SMS</span>S1: un SMS el sábado.</li>
+ <li><span class="etq m">Meta</span>Retargeting (PGK-RTG) a USD 15 al día.</li>
+ <li><span class="etq i">Instagram</span>Post fijado "2027 is open" en colaboración con @gkacademyfl.</li></ul></div></div>
+<div class="fase"><div class="cuando">Fase 2 · Preventa<small>dic – feb (40 inscritos)</small></div><div>
+ <ul><li><span class="etq m">Meta</span>Captación en Florida (PGK-FL) y prueba en el sureste (PGK-SE) desde enero, más retargeting.</li>
+ <li><span class="etq e">Correo</span>S3: un correo cada 2–3 semanas (presentación, un día en el camp, staff y nutrición, fin de preventa).</li>
+ <li><span class="etq s">SMS</span>S3: dos SMS (lanzamiento en diciembre y fin de preventa en febrero).</li>
+ <li><span class="etq i">Alianzas</span>Presencia en The Miami Classic (4–6 y 11–13 dic) con QR para familias de arqueros.</li></ul></div></div>
+<div class="fase"><div class="cuando">Fase 3 · Empuje<small>mar – may (85 inscritos)</small></div><div>
+ <ul><li><span class="etq m">Meta</span>Mayor inversión, con los anuncios que mejor costo por inscrito tuvieron y testimonios.</li>
+ <li><span class="etq e">Correo</span>Secuencia automática a quien empieza la inscripción y no paga (correo el mismo día, SMS al día siguiente y correo al tercer día).</li>
+ <li><span class="etq i">Alianzas</span>Adidas Champions Cup (5–7 mar, Tampa) y Clash of the Champions (9–11 abr), y tryouts de arqueros de Athletum (mayo).</li></ul></div></div>
+<div class="fase"><div class="cuando">Fase 4 · Cierre<small>jun – jul (100 inscritos)</small></div><div>
+ <ul><li>Recordatorios a quien no ha terminado la inscripción, "últimos lugares" solo si es real, y logística completa para los inscritos (llegada, qué llevar, horarios, formularios médicos).</li></ul></div></div>
+
+<h2 id="es-meta"><span class="n">07</span>Meta Ads: estructura, nombres y públicos</h2>
+<p class="lead">Una sola campaña con conjuntos por público, en la cuenta publicitaria del socio. Objetivo: clientes potenciales optimizando al clic en "Register" (evento Lead) mientras haya poco volumen, y a inscripciones pagadas (Purchase) cuando el píxel acumule datos. Anuncios dirigidos a padres (Meta no permite segmentar por intereses a menores).</p>
+<div class="tabla"><table>
+<thead><tr><th>Nivel</th><th>Nombre</th><th>Público</th><th>Ubicación</th><th class="n">USD / día</th></tr></thead>
+<tbody>
+<tr><td>Campaña</td><td><b>PGK | REGISTRATIONS | SUMMER 2027</b></td><td colspan="3">Presupuesto por conjunto (ABO) para proteger cada segmento</td></tr>
+<tr><td>Conjunto</td><td><b>PGK-RTG</b> | WEB + IG + FB 365D</td><td>Visitantes de la web y quienes interactuaron con @progkexperience y @gkacademyfl en el último año; excluye inscritos</td><td>Florida y EE. UU.</td><td class="n">8–15</td></tr>
+<tr><td>Conjunto</td><td><b>PGK-FL</b> | PADRES DE ARQUEROS</td><td>Padres 30–55 con intereses en fútbol juvenil y arqueros; similares de inscritos 2026 cuando haya base</td><td>Florida: Naples, Fort Myers, Miami-Dade, Broward, Palm Beach, Tampa y Orlando</td><td class="n">20–30</td></tr>
+<tr><td>Conjunto</td><td><b>PGK-SE</b> | PADRES DE ARQUEROS (PRUEBA)</td><td>El mismo público que FL</td><td>Georgia, Alabama, Carolina del Sur y del Norte</td><td class="n">10–15</td></tr>
+</tbody></table></div>
+<h3>Anuncios por conjunto (4–6, ángulos distintos)</h3>
+<div class="tabla"><table>
+<thead><tr><th>Nombre del anuncio</th><th>Formato</th><th>Ángulo</th><th>Material</th></tr></thead>
+<tbody>
+<tr><td>PGK | REEL | DAY-AT-CAMP</td><td>Reel 9:16</td><td>Un día completo, de la mañana a la noche</td><td>Videos 2026</td></tr>
+<tr><td>PGK | CAROUSEL | RECAP-2026</td><td>Carrusel 4:5</td><td>40 arqueros, una semana real</td><td>Fotos 2026</td></tr>
+<tr><td>PGK | REEL | COACH-INVITE</td><td>Reel</td><td>Invitación del director o de un entrenador a cámara</td><td>Grabación nueva</td></tr>
+<tr><td>PGK | STATIC | FULL-CARE</td><td>Imagen 4:5</td><td>Hotel, comidas, nutricionista y supervisión 24/7 (lo que más pregunta un padre)</td><td>Fotos de la web y del hotel</td></tr>
+<tr><td>PGK | STATIC | PRICE-STAGE</td><td>Imagen 4:5</td><td>Black Friday / fin de preventa con fecha límite real</td><td>Diseño</td></tr>
+<tr><td>PGK | REEL | TESTIMONIAL</td><td>Reel</td><td>Un camper o un padre de 2026 (con permiso)</td><td>Por grabar</td></tr>
+</tbody></table></div>
+<p class="fuentes">Enlaces con UTM: utm_source=meta, utm_campaign=pgk_summer27, utm_content=&lt;nombre del anuncio&gt;. Regla de optimización: cada 7 días se pausa el anuncio con peor costo por inscrito si gastó al menos USD 60 sin resultados, y se pasa presupuesto al conjunto con mejor costo.</p>
+
+<h2 id="es-envios"><span class="n">08</span>Calendario de correos y SMS</h2>
+<p class="lead">Envíos con nombre y fecha (de referencia). Regla: máximo un mensaje por día por familia, nunca a quien ya se inscribió y nunca el mismo contenido dos veces.</p>
+<div class="tabla"><table>
+<thead><tr><th>Código</th><th>Fecha</th><th>Canal</th><th>Segmento</th><th>Contenido</th></tr></thead>
+<tbody>
+<tr><td>PGK-E01</td><td>vie 27 nov</td><td>Correo</td><td>S1, S2</td><td>"2027 is open": precio Black Friday y código de fidelidad</td></tr>
+<tr><td>PGK-S01</td><td>sáb 28 nov</td><td>SMS</td><td>S1</td><td>Recordatorio corto con enlace</td></tr>
+<tr><td>PGK-E02</td><td>lun 30 nov</td><td>Correo</td><td>S1, S2 sin inscribirse</td><td>Cyber Monday: último día del precio</td></tr>
+<tr><td>PGK-E03</td><td>mié 9 dic</td><td>Correo</td><td>S3</td><td>"One week. 24/7. Goalkeepers only." Presentación del camp</td></tr>
+<tr><td>PGK-S02</td><td>jue 10 dic</td><td>SMS</td><td>S3</td><td>Lanzamiento con enlace</td></tr>
+<tr><td>PGK-E04</td><td>mié 13 ene</td><td>Correo</td><td>S2, S3</td><td>Un día en el camp (video)</td></tr>
+<tr><td>PGK-E05</td><td>mié 3 feb</td><td>Correo</td><td>S2, S3</td><td>Conoce al staff y a la nutricionista</td></tr>
+<tr><td>PGK-E06</td><td>mar 23 feb</td><td>Correo</td><td>Todos sin inscribirse</td><td>La preventa termina el 28 de febrero</td></tr>
+<tr><td>PGK-S03</td><td>jue 25 feb</td><td>SMS</td><td>S1, S3</td><td>Fin de preventa</td></tr>
+<tr><td>PGK-E07</td><td>mié 24 mar</td><td>Correo</td><td>Todos sin inscribirse</td><td>Testimonios 2026</td></tr>
+<tr><td>PGK-E08</td><td>mié 28 abr</td><td>Correo</td><td>Todos sin inscribirse</td><td>Preguntas de los padres: seguridad, comidas, hotel, transporte</td></tr>
+<tr><td>PGK-S04</td><td>jue 20 may</td><td>SMS</td><td>S1, S3</td><td>Recordatorio antes del verano</td></tr>
+<tr><td>PGK-E09</td><td>mié 16 jun</td><td>Correo</td><td>Todos sin inscribirse</td><td>Última llamada (si hay lugares)</td></tr>
+<tr><td>AUTO</td><td>Desde marzo</td><td>Correo + SMS</td><td>Registro sin pago</td><td>Secuencia automática: día 0 correo, día 1 SMS, día 3 correo</td></tr>
+</tbody></table></div>
+<div class="grid g2" style="margin-top:14px">
+ <div class="msg"><b>PGK-E01 · borrador</b>Subject: You're back on the list, keeper.<br>Last summer you lived a week like a pro goalkeeper in Naples. Registration for the Pro GK Residential Experience 2027 is open: Black Friday price through Dec 2, plus your returning-camper code <i>[CODE]</i>. → Reserve your spot</div>
+ <div class="msg"><b>PGK-S02 · borrador</b>{first-name}, a summer camp only for goalkeepers in Naples, FL: one week living and training like a pro. Ages 11-18:</div>
+</div>
+
+<h2 id="es-organico"><span class="n">09</span>Instagram: calendario de contenido</h2>
+<p class="lead">Lo publica el equipo del socio, siempre en colaboración con @gkacademyfl y la sede correspondiente. Ritmo sugerido: 2 publicaciones por semana más historias.</p>
+<div class="tabla"><table>
+<thead><tr><th>Mes</th><th>Publicaciones propuestas</th></tr></thead>
+<tbody>
+<tr><td>Noviembre</td><td>"2027 is open" (fijado) · carrusel resumen 2026 · historias con cuenta regresiva del Black Friday</td></tr>
+<tr><td>Diciembre</td><td>Un día en el camp (reel) · conoce al staff (carrusel) · sorteo de guantes con @elitesportgkusa</td></tr>
+<tr><td>Enero</td><td>Ejercicio de la semana (serie de reels) · dónde se vive y entrena: Great Wolf Lodge y Paradise Coast</td></tr>
+<tr><td>Febrero</td><td>La nutrición del arquero (con la nutricionista) · fin de preventa (historias)</td></tr>
+<tr><td>Marzo – abril</td><td>Testimonios 2026 · arqueros conocidos que pasaron por la academia · preguntas de los padres</td></tr>
+<tr><td>Mayo – julio</td><td>Cuenta regresiva · presentación de los coaches 2027 · lista de qué llevar · semana del camp en vivo</td></tr>
+</tbody></table></div>
+
+<h2 id="es-alianzas"><span class="n">10</span>Alianzas y canales propios</h2>
+<div class="grid g2">
+ <div class="tarjeta"><div class="et">Torneos que organizamos</div><div class="nota">The Miami Classic (4–6 y 11–13 dic), Adidas Champions Cup (5–7 mar, Tampa) y Clash of the Champions (9–11 abr) reúnen a miles de familias de fútbol en Florida. Propuesta: mesa o banner con QR, flyer para arqueros y correo a sus equipos inscritos.</div></div>
+ <div class="tarjeta"><div class="et">Academias Pro GK y entrenadores</div><div class="nota">Que cada entrenador de @gkacademyfl invite a sus arqueros, con un código propio para medir quién trae a cada familia. El camp de Thanksgiving es la primera oportunidad.</div></div>
+ <div class="tarjeta"><div class="et">Patrocinador @elitesportgkusa</div><div class="nota">Sorteo de guantes o de un lugar en el camp a cambio de difusión en su cuenta; ya colaboró en varias publicaciones de 2026.</div></div>
+ <div class="tarjeta"><div class="et">Clubes de la región</div><div class="nota">Correo a directores técnicos y entrenadores de arqueros de clubes de Florida con un descuento de grupo (por ejemplo, 3 arqueros del mismo club).</div></div>
+</div>
+
+<h2 id="es-presu"><span class="n">11</span>Presupuesto aproximado</h2>
+<p class="lead">Pauta en Meta por fase, con el monto diario por conjunto. Producción, correos y diseño se hacen con el equipo actual.</p>
+<div class="tabla"><table>
+<thead><tr><th>Fase</th><th>Días</th><th>Conjuntos y USD por día</th><th class="n">Total</th></tr></thead>
+<tbody>
+<tr><td>1 · Black Friday</td><td class="n">6</td><td>RTG 15</td><td class="n">USD 90</td></tr>
+<tr><td>2 · Preventa (dic – feb)</td><td class="n">88</td><td>RTG 8 · FL 20 · SE 10 (desde enero)</td><td class="n">USD 3.050</td></tr>
+<tr><td>3 · Empuje (mar – may)</td><td class="n">92</td><td>RTG 10 · FL 30 · SE 15</td><td class="n">USD 5.060</td></tr>
+<tr><td>4 · Cierre (jun – jul)</td><td class="n">50</td><td>RTG 15 · FL 25</td><td class="n">USD 2.000</td></tr>
+<tr><td><b>Total pauta Meta</b></td><td></td><td></td><td class="n"><b>USD 10.200</b></td></tr>
+<tr><td>Versión prudente (60 %)</td><td></td><td>Mismos conjuntos, montos menores; se sube solo si el costo por inscrito es bueno</td><td class="n">USD 6.100</td></tr>
+<tr><td>Otros (opcional)</td><td></td><td>Impresión de flyers y banner para torneos · premio del sorteo (aporta el patrocinador)</td><td class="n">USD 200–400</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>Cómo leerlo:</b> si Meta aporta 35–55 inscritos con USD 10.200, el costo por inscrito sería de USD 185–290, entre 12 % y 19 % del precio. Regla de control: si el costo por inscrito de un mes supera USD 300, se baja la inversión y se refuerzan los canales propios. Los envíos por correo y SMS no requieren presupuesto adicional si se usan las cuentas actuales.</div>
+
+<h2 id="es-medicion"><span class="n">12</span>Medición y reportes</h2>
+<div class="tabla"><table>
+<thead><tr><th>Indicador</th><th>Dónde se mide</th><th class="n">Referencia</th></tr></thead>
+<tbody>
+<tr><td>Inscritos y pagados (total y por segmento)</td><td>App de inscripción, con lectura automática</td><td class="n">100 al cierre</td></tr>
+<tr><td>Costo por inscrito en Meta</td><td>Meta + app (compras enviadas por servidor)</td><td class="n">≤ USD 300</td></tr>
+<tr><td>Inscripciones empezadas sin pagar</td><td>App</td><td class="n">—</td></tr>
+<tr><td>Apertura y clics de correo · clics de SMS</td><td>Constant Contact · Vozzi</td><td class="n">25–35 % · 7–10 %</td></tr>
+<tr><td>Visitas a la web por canal</td><td>Google Analytics con UTM</td><td class="n">—</td></tr>
+<tr><td>Alcance y seguidores en Instagram</td><td>Instagram</td><td class="n">—</td></tr>
+</tbody></table></div>
+<p class="fuentes">Reporte semanal al socio (una página) y panel en vivo, como el de ID Camps y Summer Camps.</p>
+
+<h2 id="es-riesgos"><span class="n">13</span>Riesgos y detalles a no pasar por alto</h2>
+<div class="tabla"><table>
+<thead><tr><th>Tema</th><th>Por qué importa</th><th>Propuesta</th></tr></thead>
+<tbody>
+<tr><td>Remitente de correos y SMS</td><td>Desde nuestras cuentas, el SMS sale con el pie "JAcademy Texts" y el correo desde un dominio de Juventus</td><td>Verificar progkexperience.com como remitente en el sistema de correo y decidir el nombre del SMS</td></tr>
+<tr><td>Permiso para escribir a las bases</td><td>El SMS exige consentimiento (TCPA) y el correo debe permitir darse de baja (CAN-SPAM)</td><td>Usar solo contactos con relación previa y confirmar el permiso de la base del socio</td></tr>
+<tr><td>Capacidad real</td><td>100 arqueros exigen habitaciones, staff y canchas acordes</td><td>Confirmar el cupo máximo y la proporción de coaches por arquero antes de prometer</td></tr>
+<tr><td>Fotos y videos de menores</td><td>Se usarán en anuncios</td><td>Autorización de imagen en la inscripción de 2026 o pedirla</td></tr>
+<tr><td>Políticas visibles</td><td>Un precio alto genera dudas antes de pagar</td><td>Reembolso, cancelación, seguro, supervisión nocturna y transporte desde el aeropuerto en la web</td></tr>
+<tr><td>Cuenta publicitaria y pago</td><td>Quién es dueño de la cuenta y quién paga la pauta</td><td>Pauta en la cuenta del socio con su método de pago; nosotros como administradores</td></tr>
+<tr><td>Atención a familias</td><td>Mensajes sin responder se pierden como ventas</td><td>Definir quién responde correo, SMS, Instagram y WhatsApp, y en cuánto tiempo</td></tr>
+<tr><td>Fechas 2027</td><td>Todo el calendario depende de ellas</td><td>Confirmarlas en la reunión del lunes</td></tr>
+</tbody></table></div>
+
+<h2 id="es-socio"><span class="n">14</span>Lo que se necesita del socio (lunes 16)</h2>
+<ul class="check">
+<li>Fechas del camp 2027, precio, escalera de precios, cuotas y cupo máximo.</li>
+<li>Resultados de 2026: confirmar los 40 inscritos y el precio, de dónde llegaron y cuánto se invirtió en anuncios.</li>
+<li>Base de inscritos y leads de 2026 (correo y teléfono) con permiso para escribirles.</li>
+<li>Accesos: web, app de inscripción, Stripe, página de Facebook y Administrador de anuncios.</li>
+<li>Fotos y videos del camp 2026 en la mejor calidad, y autorización de imagen.</li>
+<li>Presupuesto mensual de Meta aprobado (completo o prudente) y método de pago de la cuenta.</li>
+<li>Monto del código de fidelidad y del crédito por referido.</li>
+<li>Responsable de atender a las familias y de publicar en Instagram.</li>
+</ul>
+
+<footer>Borrador preparado el 11-11-2026 a partir de la web, Instagram (27 publicaciones de @progkexperience y 72 de @gkacademyfl), las bases propias (PlayMetrics, Constant Contact y Vozzi) y precios públicos de camps en Florida. Las fechas de envío y los montos son de referencia.</footer>
+</div>
+</div>
+<div class="bloque" lang="en">
+<header class="portada"><div class="in">
+<div class="kicker">Marketing strategy · draft for review</div>
+<h1>Pro GK Residential <span>Experience 2027</span></h1>
+<p class="sub">An integrated strategy to take the residential goalkeeper camp in Naples, Florida, from 40 campers in 2026 to 100 in 2027: diagnosis, audience, offer, media plan with names and budget, send calendar, partnerships, measurement and what is needed to get started.</p>
+<div class="meta"><span class="chip">Goal: 100 registrations (100–120)</span><span class="chip">Ages 11–18 · goalkeepers only</span><span class="chip">Estimated Meta ads: USD 10,000 over 8 months</span><span class="chip">Partner meeting: Monday, Nov 16</span></div>
+</div></header>
+<nav class="indice"><div class="in">
+<a href="#en-resumen">Summary</a><a href="#en-diag">Diagnosis</a><a href="#en-redes">Social</a><a href="#en-publico">Audience</a><a href="#en-oferta">Offer</a><a href="#en-medios">Media plan</a><a href="#en-meta">Meta Ads</a><a href="#en-envios">Email &amp; SMS</a><a href="#en-organico">Instagram</a><a href="#en-alianzas">Partnerships</a><a href="#en-presu">Budget</a><a href="#en-medicion">Measurement</a><a href="#en-riesgos">Risks</a><a href="#en-socio">From the partner</a>
+</div></nav>
+<div class="envoltura">
+
+<h2 id="en-resumen"><span class="n">01</span>Executive summary</h2>
+<p class="lead">The camp has a strong, distinctive product (residential, goalkeepers only, hotel with water park, nutritionist and staff connected to MLS and college programs) and a very well-defined audience. In 2026, its first edition, it brought together 40 goalkeepers with about 3 months of promotion. To reach 100, the proposal is to start now, with 8 months ahead, working five coordinated fronts.</p>
+<div class="grid g3">
+ <div class="tarjeta"><div class="cifra">100</div><div class="et">registrations in 2027</div><div class="nota">2.5 times 2026. At USD 1,499 (the 2026 value) that is about USD 150,000 in gross revenue before discounts.</div></div>
+ <div class="tarjeta"><div class="cifra">USD 10,000</div><div class="et">Meta ads (8 months)</div><div class="nota">About USD 1,250 per month on average, split by phase. That is 7% of target revenue. A conservative USD 6,000 version is included.</div></div>
+ <div class="tarjeta"><div class="cifra">5</div><div class="et">acquisition fronts</div><div class="nota">2026 campers, partner academies, our own goalkeeper databases, Meta Ads and partnerships (tournaments, clubs and sponsor).</div></div>
+</div>
+<div class="aviso">Conversion and cost-per-registration figures are reference estimates for planning. They will be recalculated with the real 2026 results (price, where campers came from and spend) and, from December on, with each week's data.</div>
+
+<h2 id="en-diag"><span class="n">02</span>Diagnosis</h2>
+<div class="grid g2">
+ <div class="tarjeta"><div class="et">Website · progkexperience.com</div><div class="nota">Uses the same system as juventuscampsusa.com (registration at app.progkexperience.com). It still shows <b>Summer 2026</b> with "Registrations currently closed"; the buttons don't lead to a form because no 2027 camp is loaded. No price is shown (it mentions "installments available" and the separate USD 99 uniform kit). <b>This is the first blocker: without the website there are no sales and no tracking.</b></div></div>
+ <div class="tarjeta"><div class="et">Registration platform</div><div class="nota">Since it is the same system used for ID Camps, admin access would allow reusing what already works there: automatic reading of registrations and payments, a sequence for people who register and don't pay, server-side purchases sent to Meta and a live dashboard.</div></div>
+ <div class="tarjeta"><div class="et">2026 Meta advertising</div><div class="nota">According to Alessandro, several videos were promoted. Spend, cost per registration and audiences can't be seen from outside (the Ad Library API doesn't show them in the U.S.): the partner's Ads Manager and page are needed.</div></div>
+ <div class="tarjeta"><div class="et">2026 email and SMS</div><div class="nota">Emails were sent by another person with a different system. The Juventus Vozzi account has no sends for the camp; it does have a 2024 goalkeeper campaign (winter clinic with Buffon Academy: about 940 recipients per send and 7–9% click rate), which shows this audience responds well.</div></div>
+</div>
+
+<h2 id="en-redes"><span class="n">03</span>Social media, post by post</h2>
+<p class="lead">Review of all 27 posts on @progkexperience and the 72 most recent on @gkacademyfl (as of Nov 11). Instagram doesn't show reel views to third parties, so likes and comments are compared.</p>
+<div class="grid g3">
+ <div class="tarjeta"><div class="cifra">40</div><div class="et">goalkeepers in 2026</div><div class="nota">First edition, July 26–31. Their own recap says "40 competitive goalkeepers".</div></div>
+ <div class="tarjeta"><div class="cifra">USD 1,499</div><div class="et">2026 camp value</div><div class="nota">From the free-spot giveaway ("Value: $1,499"). Reference until the 2027 price is confirmed.</div></div>
+ <div class="tarjeta"><div class="cifra">3 months</div><div class="et">of Instagram posting</div><div class="nota">Organic profile activity: first post on April 26 and registrations closed on July 23. Since August 10, almost no posts. Paid promotion during that period isn't visible from outside.</div></div>
+</div>
+<div class="tabla"><table>
+<thead><tr><th>Format</th><th class="n">Posts</th><th class="n">Likes (median)</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td>Carousels (almost all from camp week, in August)</td><td class="n">10</td><td class="n">168</td><td>The account's best: a carousel posted together with a professional goalkeeper reached 2,897 and the camp recap 306–341</td></tr>
+<tr><td>Reels (training, announcements and humor)</td><td class="n">11</td><td class="n">171</td><td>A humor reel posted as a collaboration with several accounts reached 1,940; announcement reels range 135–370</td></tr>
+<tr><td>Single image (giveaway, winner, closing, nutritionist)</td><td class="n">6</td><td class="n">96</td><td>Graphics alone perform worse; the exception is the nutritionist introduction (292 likes and 60 comments, the most commented, pinned)</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>Takeaways:</b> (1) almost everything was posted as a collaboration with @gkacademyfl (17K followers), its locations, the sponsor @elitesportgkusa and the director @ronaldgarces12: it is the way to reach more people and should continue. (2) Real camp material works better than graphics. (3) Parents care about full care (nutrition, 24/7 supervision). (4) @gkacademyfl is running its Thanksgiving camp now: a good moment to present 2027 in person.</div>
+
+<h2 id="en-publico"><span class="n">04</span>Audience: named segments</h2>
+<p class="lead">Each segment has its own message, channel and goal. The same names are used in Meta, in the lists and in the tracking dashboard.</p>
+<div class="tabla"><table>
+<thead><tr><th>Code</th><th>Segment</th><th class="n">Size</th><th>Channel</th><th>Main message</th><th class="n">Goal</th></tr></thead>
+<tbody>
+<tr><td><b>S1</b></td><td>2026 campers</td><td class="n">40</td><td>Email, SMS, retargeting</td><td>"Live it again" with a loyalty code</td><td class="n">10–15</td></tr>
+<tr><td><b>S2</b></td><td>Pro GK academy families (Naples, Palm Beach and Miami-Dade)</td><td class="n">to confirm</td><td>Partner: coaches, groups and social media</td><td>"The next level of your training"</td><td class="n">10–20</td></tr>
+<tr><td><b>S3</b></td><td>Goalkeepers in our databases (Juventus Academy Miami and Athletum)</td><td class="n">1,000+</td><td>Email and SMS</td><td>"One week, 24/7, goalkeepers only"</td><td class="n">10–30</td></tr>
+<tr><td><b>S4</b></td><td>Parents of goalkeepers in Florida (new)</td><td class="n">broad</td><td>Meta Ads</td><td>Professional experience + full care</td><td class="n">30–45</td></tr>
+<tr><td><b>S5</b></td><td>Parents of goalkeepers in the Southeast (GA, AL, SC, NC)</td><td class="n">broad</td><td>Meta Ads (test)</td><td>"Florida's goalkeeper camp", hotel included</td><td class="n">5–10</td></tr>
+<tr><td><b>S6</b></td><td>Clubs, goalkeeper coaches and families from our tournaments</td><td class="n">—</td><td>Partnerships, referrals and event presence</td><td>Friend code and coach outreach</td><td class="n">5–15</td></tr>
+<tr><td colspan="5"><b>Scenario total</b></td><td class="n"><b>70–135</b></td></tr>
+</tbody></table></div>
+<p class="fuentes">S3, counts only as of Nov 11: PlayMetrics 708 goalkeepers (~476 in the camp age range in 2027) · Constant Contact "GK athletum tryouts 26-27" 1,090 and "Goalkeepers base data October 2024" 775 · Vozzi "GK consolidado 24-25" 750 and "GK tryouts 26-27" 97. The databases overlap; before each send, anyone already registered is excluded.</p>
+
+<h2 id="en-oferta"><span class="n">05</span>Offer and pricing (proposal)</h2>
+<p class="lead">A price ladder with real deadlines creates urgency without inventing scarcity. Example amounts based on USD 1,499; the partner sets them.</p>
+<div class="tabla"><table>
+<thead><tr><th>Stage</th><th>Dates</th><th class="n">Example price</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><b>Black Friday</b></td><td>Nov 27 – Dec 2</td><td class="n">USD 1,299</td><td>Launch with people who already know the camp; uses the shopping season</td></tr>
+<tr><td><b>Early bird</b></td><td>Dec 3 – Feb 28</td><td class="n">USD 1,399</td><td>A clear deadline for most of the campaign</td></tr>
+<tr><td><b>Regular price</b></td><td>Mar 1 – close</td><td class="n">USD 1,499</td><td>List price</td></tr>
+<tr><td><b>2026 campers</b></td><td>Whole period</td><td class="n">USD 100 off</td><td>Loyalty code (on top of the current stage)</td></tr>
+<tr><td><b>Referral</b></td><td>Whole period</td><td class="n">USD 100 per friend</td><td>Credit for whoever brings another goalkeeper who registers</td></tr>
+<tr><td><b>Installments</b></td><td>Whole period</td><td class="n">3–4 payments</td><td>Lowers the barrier of a high price; already mentioned on the website</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>Value proposition:</b> "One week living like a professional goalkeeper: daily goalkeeper training with staff connected to MLS and college programs, hotel with water park and all meals, a nutritionist and 24/7 supervision." Proof points: the 40 goalkeepers of 2026, real camp photos and the accounts behind it.</div>
+
+<h2 id="en-medios"><span class="n">06</span>Media plan by phase</h2>
+<p class="lead">Assumes the 2027 camp will be in late July, like 2026 (dates to be confirmed). Reference pace of cumulative registrations in parentheses.</p>
+<div class="fase"><div class="cuando">Phase 0 · Setup<small>Nov 16 – 26</small></div><div>
+ <ul><li>Access (website, registration app, Stripe, Facebook page, Ads Manager, 2026 database) and website to 2027: dates, price, installments, buttons and a full registration test.</li>
+ <li>Tracking ready before spending: pixel and Conversions API, Google Analytics, UTM links and a tracking dashboard.</li>
+ <li>Launch assets: Black Friday ad, "a day at camp" reel and 2026 recap carousel.</li></ul></div></div>
+<div class="fase"><div class="cuando">Phase 1 · Black Friday<small>Nov 27 – Dec 2 (10 registrations)</small></div><div>
+ <ul><li><span class="etq e">Email</span>S1 and S2: 2027 opening with Black Friday price and loyalty code.</li>
+ <li><span class="etq s">SMS</span>S1: one SMS on Saturday.</li>
+ <li><span class="etq m">Meta</span>Retargeting (PGK-RTG) at USD 15 per day.</li>
+ <li><span class="etq i">Instagram</span>Pinned "2027 is open" post, in collaboration with @gkacademyfl.</li></ul></div></div>
+<div class="fase"><div class="cuando">Phase 2 · Early bird<small>Dec – Feb (40 registrations)</small></div><div>
+ <ul><li><span class="etq m">Meta</span>Prospecting in Florida (PGK-FL) and a Southeast test (PGK-SE) from January, plus retargeting.</li>
+ <li><span class="etq e">Email</span>S3: one email every 2–3 weeks (introduction, a day at camp, staff and nutrition, end of early bird).</li>
+ <li><span class="etq s">SMS</span>S3: two SMS (launch in December and end of early bird in February).</li>
+ <li><span class="etq i">Partnerships</span>Presence at The Miami Classic (Dec 4–6 and 11–13) with a QR code for goalkeeper families.</li></ul></div></div>
+<div class="fase"><div class="cuando">Phase 3 · Push<small>Mar – May (85 registrations)</small></div><div>
+ <ul><li><span class="etq m">Meta</span>Higher spend, with the ads that had the best cost per registration and testimonials.</li>
+ <li><span class="etq e">Email</span>Automated sequence for people who start registering and don't pay (email the same day, SMS the next day and email on day three).</li>
+ <li><span class="etq i">Partnerships</span>Adidas Champions Cup (Mar 5–7, Tampa) and Clash of the Champions (Apr 9–11), and Athletum goalkeeper tryouts (May).</li></ul></div></div>
+<div class="fase"><div class="cuando">Phase 4 · Close<small>Jun – Jul (100 registrations)</small></div><div>
+ <ul><li>Reminders to people who haven't finished registering, "last spots" only if true, and full logistics for registered campers (arrival, what to bring, schedules, medical forms).</li></ul></div></div>
+
+<h2 id="en-meta"><span class="n">07</span>Meta Ads: structure, names and audiences</h2>
+<p class="lead">One campaign with ad sets by audience, in the partner's ad account. Objective: leads optimized for the "Register" click (Lead event) while volume is low, then paid registrations (Purchase) once the pixel has data. Ads target parents (Meta doesn't allow interest targeting of minors).</p>
+<div class="tabla"><table>
+<thead><tr><th>Level</th><th>Name</th><th>Audience</th><th>Location</th><th class="n">USD / day</th></tr></thead>
+<tbody>
+<tr><td>Campaign</td><td><b>PGK | REGISTRATIONS | SUMMER 2027</b></td><td colspan="3">Budget per ad set (ABO) to protect each segment</td></tr>
+<tr><td>Ad set</td><td><b>PGK-RTG</b> | WEB + IG + FB 365D</td><td>Website visitors and people who engaged with @progkexperience and @gkacademyfl in the last year; excludes registered campers</td><td>Florida and U.S.</td><td class="n">8–15</td></tr>
+<tr><td>Ad set</td><td><b>PGK-FL</b> | PARENTS OF GOALKEEPERS</td><td>Parents 30–55 interested in youth soccer and goalkeeping; lookalikes of 2026 campers once there is a seed</td><td>Florida: Naples, Fort Myers, Miami-Dade, Broward, Palm Beach, Tampa and Orlando</td><td class="n">20–30</td></tr>
+<tr><td>Ad set</td><td><b>PGK-SE</b> | PARENTS OF GOALKEEPERS (TEST)</td><td>Same audience as FL</td><td>Georgia, Alabama, South and North Carolina</td><td class="n">10–15</td></tr>
+</tbody></table></div>
+<h3>Ads per ad set (4–6, different angles)</h3>
+<div class="tabla"><table>
+<thead><tr><th>Ad name</th><th>Format</th><th>Angle</th><th>Material</th></tr></thead>
+<tbody>
+<tr><td>PGK | REEL | DAY-AT-CAMP</td><td>Reel 9:16</td><td>A full day, from morning to night</td><td>2026 videos</td></tr>
+<tr><td>PGK | CAROUSEL | RECAP-2026</td><td>Carousel 4:5</td><td>40 goalkeepers, one real week</td><td>2026 photos</td></tr>
+<tr><td>PGK | REEL | COACH-INVITE</td><td>Reel</td><td>Invitation from the director or a coach on camera</td><td>New recording</td></tr>
+<tr><td>PGK | STATIC | FULL-CARE</td><td>Image 4:5</td><td>Hotel, meals, nutritionist and 24/7 supervision (parents' top questions)</td><td>Website and hotel photos</td></tr>
+<tr><td>PGK | STATIC | PRICE-STAGE</td><td>Image 4:5</td><td>Black Friday / end of early bird with a real deadline</td><td>Design</td></tr>
+<tr><td>PGK | REEL | TESTIMONIAL</td><td>Reel</td><td>A 2026 camper or parent (with permission)</td><td>To record</td></tr>
+</tbody></table></div>
+<p class="fuentes">UTM links: utm_source=meta, utm_campaign=pgk_summer27, utm_content=&lt;ad name&gt;. Optimization rule: every 7 days, pause the ad with the worst cost per registration if it spent at least USD 60 without results, and move budget to the ad set with the best cost.</p>
+
+<h2 id="en-envios"><span class="n">08</span>Email and SMS calendar</h2>
+<p class="lead">Named sends with (reference) dates. Rule: at most one message per family per day, never to registered campers and never the same content twice.</p>
+<div class="tabla"><table>
+<thead><tr><th>Code</th><th>Date</th><th>Channel</th><th>Segment</th><th>Content</th></tr></thead>
+<tbody>
+<tr><td>PGK-E01</td><td>Fri Nov 27</td><td>Email</td><td>S1, S2</td><td>"2027 is open": Black Friday price and loyalty code</td></tr>
+<tr><td>PGK-S01</td><td>Sat Nov 28</td><td>SMS</td><td>S1</td><td>Short reminder with link</td></tr>
+<tr><td>PGK-E02</td><td>Mon Nov 30</td><td>Email</td><td>S1, S2 not registered</td><td>Cyber Monday: last day of the price</td></tr>
+<tr><td>PGK-E03</td><td>Wed Dec 9</td><td>Email</td><td>S3</td><td>"One week. 24/7. Goalkeepers only." Camp introduction</td></tr>
+<tr><td>PGK-S02</td><td>Thu Dec 10</td><td>SMS</td><td>S3</td><td>Launch with link</td></tr>
+<tr><td>PGK-E04</td><td>Wed Jan 13</td><td>Email</td><td>S2, S3</td><td>A day at camp (video)</td></tr>
+<tr><td>PGK-E05</td><td>Wed Feb 3</td><td>Email</td><td>S2, S3</td><td>Meet the staff and the nutritionist</td></tr>
+<tr><td>PGK-E06</td><td>Tue Feb 23</td><td>Email</td><td>All not registered</td><td>Early bird ends February 28</td></tr>
+<tr><td>PGK-S03</td><td>Thu Feb 25</td><td>SMS</td><td>S1, S3</td><td>End of early bird</td></tr>
+<tr><td>PGK-E07</td><td>Wed Mar 24</td><td>Email</td><td>All not registered</td><td>2026 testimonials</td></tr>
+<tr><td>PGK-E08</td><td>Wed Apr 28</td><td>Email</td><td>All not registered</td><td>Parents' questions: safety, meals, hotel, transport</td></tr>
+<tr><td>PGK-S04</td><td>Thu May 20</td><td>SMS</td><td>S1, S3</td><td>Reminder before summer</td></tr>
+<tr><td>PGK-E09</td><td>Wed Jun 16</td><td>Email</td><td>All not registered</td><td>Last call (if spots remain)</td></tr>
+<tr><td>AUTO</td><td>From March</td><td>Email + SMS</td><td>Registered, not paid</td><td>Automated sequence: day 0 email, day 1 SMS, day 3 email</td></tr>
+</tbody></table></div>
+<div class="grid g2" style="margin-top:14px">
+ <div class="msg"><b>PGK-E01 · draft</b>Subject: You're back on the list, keeper.<br>Last summer you lived a week like a pro goalkeeper in Naples. Registration for the Pro GK Residential Experience 2027 is open: Black Friday price through Dec 2, plus your returning-camper code <i>[CODE]</i>. → Reserve your spot</div>
+ <div class="msg"><b>PGK-S02 · draft</b>{first-name}, a summer camp only for goalkeepers in Naples, FL: one week living and training like a pro. Ages 11-18:</div>
+</div>
+
+<h2 id="en-organico"><span class="n">09</span>Instagram: content calendar</h2>
+<p class="lead">Posted by the partner's team, always as a collaboration with @gkacademyfl and the relevant location. Suggested pace: 2 posts per week plus stories.</p>
+<div class="tabla"><table>
+<thead><tr><th>Month</th><th>Proposed posts</th></tr></thead>
+<tbody>
+<tr><td>November</td><td>"2027 is open" (pinned) · 2026 recap carousel · Black Friday countdown stories</td></tr>
+<tr><td>December</td><td>A day at camp (reel) · meet the staff (carousel) · glove giveaway with @elitesportgkusa</td></tr>
+<tr><td>January</td><td>Drill of the week (reel series) · where they live and train: Great Wolf Lodge and Paradise Coast</td></tr>
+<tr><td>February</td><td>Goalkeeper nutrition (with the nutritionist) · end of early bird (stories)</td></tr>
+<tr><td>March – April</td><td>2026 testimonials · well-known goalkeepers who came through the academy · parents' questions</td></tr>
+<tr><td>May – July</td><td>Countdown · 2027 coaches introduction · packing list · camp week live</td></tr>
+</tbody></table></div>
+
+<h2 id="en-alianzas"><span class="n">10</span>Partnerships and owned channels</h2>
+<div class="grid g2">
+ <div class="tarjeta"><div class="et">Tournaments we organize</div><div class="nota">The Miami Classic (Dec 4–6 and 11–13), Adidas Champions Cup (Mar 5–7, Tampa) and Clash of the Champions (Apr 9–11) bring together thousands of soccer families in Florida. Proposal: a table or banner with a QR code, a goalkeeper flyer and an email to registered teams.</div></div>
+ <div class="tarjeta"><div class="et">Pro GK academies and coaches</div><div class="nota">Each @gkacademyfl coach invites their goalkeepers, with a personal code to track who brings each family. The Thanksgiving camp is the first opportunity.</div></div>
+ <div class="tarjeta"><div class="et">Sponsor @elitesportgkusa</div><div class="nota">A glove giveaway or a free camp spot in exchange for promotion on their account; they already collaborated on several 2026 posts.</div></div>
+ <div class="tarjeta"><div class="et">Clubs in the region</div><div class="nota">Email to directors of coaching and goalkeeper coaches at Florida clubs with a group discount (for example, 3 goalkeepers from the same club).</div></div>
+</div>
+
+<h2 id="en-presu"><span class="n">11</span>Approximate budget</h2>
+<p class="lead">Meta ad spend by phase, with the daily amount per ad set. Production, emails and design are handled by the current team.</p>
+<div class="tabla"><table>
+<thead><tr><th>Phase</th><th>Days</th><th>Ad sets and USD per day</th><th class="n">Total</th></tr></thead>
+<tbody>
+<tr><td>1 · Black Friday</td><td class="n">6</td><td>RTG 15</td><td class="n">USD 90</td></tr>
+<tr><td>2 · Early bird (Dec – Feb)</td><td class="n">88</td><td>RTG 8 · FL 20 · SE 10 (from January)</td><td class="n">USD 3,050</td></tr>
+<tr><td>3 · Push (Mar – May)</td><td class="n">92</td><td>RTG 10 · FL 30 · SE 15</td><td class="n">USD 5,060</td></tr>
+<tr><td>4 · Close (Jun – Jul)</td><td class="n">50</td><td>RTG 15 · FL 25</td><td class="n">USD 2,000</td></tr>
+<tr><td><b>Total Meta ads</b></td><td></td><td></td><td class="n"><b>USD 10,200</b></td></tr>
+<tr><td>Conservative version (60%)</td><td></td><td>Same ad sets, lower amounts; increase only if cost per registration is good</td><td class="n">USD 6,100</td></tr>
+<tr><td>Other (optional)</td><td></td><td>Flyers and banner printing for tournaments · giveaway prize (provided by the sponsor)</td><td class="n">USD 200–400</td></tr>
+</tbody></table></div>
+<div class="aviso"><b>How to read it:</b> if Meta brings 35–55 registrations with USD 10,200, cost per registration would be USD 185–290, between 12% and 19% of the price. Control rule: if a month's cost per registration goes above USD 300, spend is reduced and owned channels are reinforced. Email and SMS sends require no additional budget if current accounts are used.</div>
+
+<h2 id="en-medicion"><span class="n">12</span>Measurement and reporting</h2>
+<div class="tabla"><table>
+<thead><tr><th>Metric</th><th>Where it is measured</th><th class="n">Reference</th></tr></thead>
+<tbody>
+<tr><td>Registered and paid (total and by segment)</td><td>Registration app, read automatically</td><td class="n">100 at close</td></tr>
+<tr><td>Meta cost per registration</td><td>Meta + app (purchases sent server-side)</td><td class="n">≤ USD 300</td></tr>
+<tr><td>Registrations started but not paid</td><td>App</td><td class="n">—</td></tr>
+<tr><td>Email opens and clicks · SMS clicks</td><td>Constant Contact · Vozzi</td><td class="n">25–35% · 7–10%</td></tr>
+<tr><td>Website visits by channel</td><td>Google Analytics with UTM</td><td class="n">—</td></tr>
+<tr><td>Instagram reach and followers</td><td>Instagram</td><td class="n">—</td></tr>
+</tbody></table></div>
+<p class="fuentes">Weekly one-page report to the partner and a live dashboard, like the ones for ID Camps and Summer Camps.</p>
+
+<h2 id="en-riesgos"><span class="n">13</span>Risks and details not to miss</h2>
+<div class="tabla"><table>
+<thead><tr><th>Topic</th><th>Why it matters</th><th>Proposal</th></tr></thead>
+<tbody>
+<tr><td>Email and SMS sender</td><td>From our accounts, SMS go out with the "JAcademy Texts" footer and emails from a Juventus domain</td><td>Verify progkexperience.com as a sender in the email system and decide the SMS name</td></tr>
+<tr><td>Permission to contact the databases</td><td>SMS requires consent (TCPA) and email must allow unsubscribing (CAN-SPAM)</td><td>Use only contacts with a prior relationship and confirm permission for the partner's database</td></tr>
+<tr><td>Real capacity</td><td>100 goalkeepers require matching rooms, staff and fields</td><td>Confirm the maximum capacity and coach-to-goalkeeper ratio before promising</td></tr>
+<tr><td>Photos and videos of minors</td><td>They will be used in ads</td><td>Image release in the 2026 registration, or request it</td></tr>
+<tr><td>Visible policies</td><td>A high price raises questions before paying</td><td>Refund, cancellation, insurance, overnight supervision and airport transport on the website</td></tr>
+<tr><td>Ad account and payment</td><td>Who owns the account and who pays for the ads</td><td>Ads in the partner's account with their payment method; our team as administrators</td></tr>
+<tr><td>Family support</td><td>Unanswered messages are lost sales</td><td>Define who answers email, SMS, Instagram and WhatsApp, and how quickly</td></tr>
+<tr><td>2027 dates</td><td>The whole calendar depends on them</td><td>Confirm them at Monday's meeting</td></tr>
+</tbody></table></div>
+
+<h2 id="en-socio"><span class="n">14</span>What is needed from the partner (Monday 16)</h2>
+<ul class="check">
+<li>2027 camp dates, price, price ladder, installments and maximum capacity.</li>
+<li>2026 results: confirm the 40 campers and the price, where they came from and how much was spent on ads.</li>
+<li>2026 registrations and leads database (email and phone) with permission to contact them.</li>
+<li>Access: website, registration app, Stripe, Facebook page and Ads Manager.</li>
+<li>Photos and videos from the 2026 camp in the best quality, plus image release.</li>
+<li>Approved monthly Meta budget (full or conservative) and the account's payment method.</li>
+<li>Loyalty code and referral credit amounts.</li>
+<li>Person responsible for answering families and posting on Instagram.</li>
+</ul>
+
+<footer>Draft prepared on Nov 11, 2026 from the website, Instagram (27 posts from @progkexperience and 72 from @gkacademyfl), our own databases (PlayMetrics, Constant Contact and Vozzi) and public prices of camps in Florida. Send dates and amounts are for reference.</footer>
+</div>
+</div>
+<script>
+(function(){var R=document.documentElement;
+function poner(l){R.setAttribute('data-lang',l);R.lang=l;document.title=l==='en'?'Pro GK Strategy 2027':'Estrategia Pro GK 2027';
+ document.querySelectorAll('.idiomas button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.l===l))});
+ try{localStorage.setItem('progk-lang',l)}catch(e){}}
+var q=(location.search.match(/lang=(es|en)/)||[])[1],g=null;try{g=localStorage.getItem('progk-lang')}catch(e){}
+poner(q||g||'es');
+document.querySelectorAll('.idiomas button').forEach(function(b){b.addEventListener('click',function(){poner(b.dataset.l)})});})();
+</script>
+</body></html>
